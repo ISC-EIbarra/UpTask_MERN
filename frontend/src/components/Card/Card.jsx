@@ -12,7 +12,7 @@ import {
 export default function GlobalCard(props) {
   const { headerText, bodyText, footerText } = props;
   return (
-    <Card className="m-3 h-[97%]">
+    <Card className="m-3 h-[97%] overflow-auto">
       {headerText && (
         <>
           <CardHeader className="flex gap-4 bg-blue-700">

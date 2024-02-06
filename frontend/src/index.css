@@ -7,6 +7,6 @@
   body,
   html {
     font-family: 'Canaro', system-ui, sans-serif;
-    height: 100%;
+    min-height: 100%;
   }
 }
