@@ -96,14 +96,14 @@ export const Register = () => {
   return (
     <>
       <div className="register">
-        <div className="bg-white rounded-3xl">
-          <h1 className="font-semibold text-5xl mt-4 text-center">Registro</h1>
-          <h1 className="font-normal text-lg text-center mt-4">
+        <div className="flex flex-col justify-center bg-white rounded-3xl py-2 px-4">
+          <h1 className="font-semibold text-5xl mt-2 text-center">Registro</h1>
+          <h1 className="font-normal text-lg text-center mt-2">
             Crea tu cuenta y administra tus{' '}
             <span className="text-blue-700">proyectos</span>
           </h1>
 
-          <form onSubmit={handleSubmit} className="my-8 py-2 px-4">
+          <form onSubmit={handleSubmit} className="my-4">
             {msg && <Alert alert={alert} />}
             <div className="my-4">
               <label htmlFor="nombre" className="text-gray-600 block font-bold">
@@ -118,7 +118,7 @@ export const Register = () => {
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-            <div className="my-5">
+            <div className="my-4">
               <label htmlFor="email" className="text-gray-600 block font-bold">
                 Email
               </label>
@@ -131,7 +131,7 @@ export const Register = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="my-5">
+            <div className="my-4">
               <label
                 htmlFor="password"
                 className="text-gray-600 block font-bold"
@@ -147,7 +147,7 @@ export const Register = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <div className="my-5">
+            <div className="my-4">
               <label
                 htmlFor="rep-password"
                 className="text-gray-600 block font-bold"
@@ -169,7 +169,7 @@ export const Register = () => {
               className="w-full my-2 py-2 px-4 rounded-3xl border bg-blue-600 text-white hover:cursor-pointer hover:bg-blue-800 transition-colors"
             />
           </form>
-          <nav className="lg:flex lg:justify-between mb-8 px-4">
+          <nav className="lg:flex lg:justify-between">
             <Link className="block text-center text-slate-500 text-sm" to="/">
               ¿Ya tienes una cuenta?{' '}
               <span className="hover:text-blue-900">Inicia Sesión</span>

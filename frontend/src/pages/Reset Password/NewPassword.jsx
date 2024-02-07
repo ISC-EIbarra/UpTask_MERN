@@ -76,7 +76,7 @@ export const NewPassword = () => {
   return (
     <>
       <div className="new-password">
-        <div className="bg-white rounded-3xl">
+        <div className="flex flex-col justify-center bg-white rounded-3xl">
           <h1 className="font-semibold text-5xl mt-4 text-center">
             Restablecer{' '}
             <span className="text-blue-700 text-center">Contraseña</span>

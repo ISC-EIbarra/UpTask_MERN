@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 const AuthLayout = () => {
   return (
     <>
-      <main className="container mx-auto p-5 md:flex md:justify-center md:items-center">
+      <main className="container mx-auto p-4 flex min-h-screen justify-center items-center">
         <div className="">
           <Outlet />
         </div>

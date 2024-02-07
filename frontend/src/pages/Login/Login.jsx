@@ -60,7 +60,7 @@ export const Login = () => {
         <div className="image-login">
           <img src={login} />
         </div>
-        <div className="bg-white rounded-3xl">
+        <div className="flex flex-col justify-center bg-white rounded-3xl py-2 px-4">
           <h1 className="font-semibold text-5xl mt-4 text-center">
             ¡Bienvenido a{' '}
             <span className="text-blue-700 text-center">UpTask</span>!
@@ -71,7 +71,7 @@ export const Login = () => {
           </h1>
           {msg && <Alert alert={alert} />}
 
-          <form className="my-8 py-2 px-4" onSubmit={handleSubmit(onSubmit)}>
+          <form className="my-8" onSubmit={handleSubmit(onSubmit)}>
             <div className="my-4">
               <div className="flex gap-4 items-center">
                 <label className="font-semibold">Email</label>
@@ -109,7 +109,7 @@ export const Login = () => {
             />
           </form>
 
-          <nav className="lg:flex lg:justify-between mb-4">
+          <nav className="lg:flex lg:justify-between">
             <Link
               className="block text-center text-slate-500 text-sm"
               to="register"

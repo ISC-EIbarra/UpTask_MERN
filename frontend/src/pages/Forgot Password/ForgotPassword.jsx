@@ -54,10 +54,10 @@ export const ForgotPassword = () => {
     <>
       <div className="forgot-password">
         <div className="forgot-password-image">
-          <img src={forgotpassword} />
+          <img src={forgotpassword} alt="password img" />
         </div>
-        <div className="bg-white rounded-3xl">
-          <h1 className="font-semibold text-5xl mt-4 text-center">
+        <div className="flex flex-col justify-center bg-white rounded-3xl py-2 px-4">
+          <h1 className="font-semibold text-4xl mt-4 text-center">
             Restablecer{' '}
             <span className="text-blue-700 text-center">Contraseña</span>
           </h1>
@@ -66,7 +66,7 @@ export const ForgotPassword = () => {
             <span className="text-blue-700">proyectos</span>
           </h1>
 
-          <form onSubmit={handleSubmit} className="my-8 py-2 px-4">
+          <form onSubmit={handleSubmit} className="my-4">
             {msg && <Alert alert={alert} />}
             <div className="my-4">
               <label htmlFor="email" className="text-gray-600 block font-bold">

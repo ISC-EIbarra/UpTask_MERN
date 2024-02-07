@@ -13,7 +13,7 @@ const ProtectedRoutes = () => {
   return (
     <>
       {auth._id ? (
-        <div className="bg-gray-300 app-container">
+        <div className="app-container">
           <Navbar />
           <div className="main-content">
             <Sidebar />
